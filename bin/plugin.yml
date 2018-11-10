@@ -1,0 +1,21 @@
+name: WorldGuardPlots
+version: 1.0.0
+description: Plugin per i lotti integrati con WorldGuard
+author: macca_ferri
+website: https://emilianomaccaferri.com
+
+main: com.emilianomaccaferri.wgplts.Main
+depend: [WorldGuard, WorldEdit, TitleAPI]
+
+commands:
+  compra:
+    description: Compra un bene o un servizio.
+    permission: wgplots.buy
+    usage: /compra <bene o servizio> <nome bene o servizio>
+  vendi:
+    description: Vendi un bene o un servizio che possiedi.
+    permission: wgplots.sell
+    usage: /vendi <tipo di bene o servizio> <nome bene o servizio>
+  appartamenti:
+    description: Comandi utili per gli appartamenti
+    aliases: [apts, apt]
