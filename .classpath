@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Macca/Desktop/mc-libs/spigot-1.13.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Macca/Desktop/mc-libs/Vault-1.6.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Macca/Desktop/mc-libs/worldedit-bukkit-7.0.0-beta-01.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Macca/Desktop/mc-libs/worldguard-legacy-7.0.0-beta01.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Macca/Desktop/mc-libs/TitleAPI-1.7.7.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

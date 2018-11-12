@@ -1,21 +1,29 @@
-name: WorldGuardPlots
+name: WorldGuardUtils
 version: 1.0.0
-description: Plugin per i lotti integrati con WorldGuard
+description: Tante cose utili
 author: macca_ferri
 website: https://emilianomaccaferri.com
 
 main: com.emilianomaccaferri.wgplts.Main
-depend: [WorldGuard, WorldEdit, TitleAPI]
+depend: [WorldGuard, WorldEdit, TitleAPI, Vault]
 
 commands:
   compra:
     description: Compra un bene o un servizio.
-    permission: wgplots.buy
+    permission: wgutils.buy
     usage: /compra <bene o servizio> <nome bene o servizio>
   vendi:
     description: Vendi un bene o un servizio che possiedi.
-    permission: wgplots.sell
+    permission: wgutils.sell
     usage: /vendi <tipo di bene o servizio> <nome bene o servizio>
   appartamenti:
     description: Comandi utili per gli appartamenti
     aliases: [apts, apt]
+  createprotectedregion:
+    aliases: [cpr, cpregion]
+    description: Crea una regione
+    permission: wgutils.cpr
+  wgu:
+    aliases: [worldguardutils]
+    description: Robe utilissime per settare le cose
+    permission: wgutils.admin

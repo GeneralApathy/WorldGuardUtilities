@@ -1,5 +1,12 @@
 apartaments: {}
 
 protected-regions:
-  - "survival"
+  - "survival:world"
+  - "test:world"
+  - "test:rome"
 
+safe-zone: "&aZona sicura"
+safe-zone-subtitle: "&eNon ci sono problemi qui"
+
+war-zone: "&cZona non sicura"
+war-zone-subtitle: "&eCi sono svariati problemi qui"

@@ -30,6 +30,7 @@ public class PlotCommands implements CommandExecutor {
     
 	}
   
+	@SuppressWarnings("deprecation")
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
 		if (!(sender instanceof Player)){
 			sender.sendMessage(ChatColor.WHITE + "[Appartamenti] " + ChatColor.RED + " Eh no, devi essere un player");
@@ -51,7 +52,7 @@ public class PlotCommands implements CommandExecutor {
 					player.sendMessage(
 							ChatColor.WHITE + "Utilizzo: /appartamenti" + ChatColor.AQUA + " create <nome_appartamento> <prezzo> -" + ChatColor.WHITE + " Crea un appartamento in base a una selezione\n");
 				}
-				if (!player.hasPermission("wgplots.create")){
+				if (!player.hasPermission("wgutils.create")){
 					player.sendMessage(ChatColor.WHITE + "[Appartamenti] " + ChatColor.RED + ChatColor.BOLD + "Non hai il permesso di eseguire questo comando");
 					return true;
 				}

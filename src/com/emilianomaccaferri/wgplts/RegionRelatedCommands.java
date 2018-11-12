@@ -59,7 +59,7 @@ public class RegionRelatedCommands implements CommandExecutor {
 						
 					}else{
 						
-						player.sendMessage(ChatColor.RED + "[Server Protection] C'Ã¨ stato un problemino...");
+						player.sendMessage(ChatColor.RED + "[Server Protection] C'è stato un problemino...");
 					}
 
 				} catch (IncompleteRegionException e) {
@@ -91,7 +91,7 @@ public class RegionRelatedCommands implements CommandExecutor {
 		
 		this.instance.getConfig().set(name, this.instance.getConfig().getStringList("protected-regions"));
 		WorldGuard.getInstance().getPlatform().getRegionContainer().get(w).addRegion(region);
-		RegionRelatedEvents.actualRegions.put(name, WorldGuard.getInstance().getPlatform().getRegionContainer().get(w).getRegion(name));
+		RegionRelatedEvents.actualRegions.put(w.getName(), new GettableRegion(name, WorldGuard.getInstance().getPlatform().getRegionContainer().get(w).getRegion(name)));
 		return true;
 		
 	}
